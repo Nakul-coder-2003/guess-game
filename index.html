@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS THE GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Number</h1>
+        <p>Choose a range, then guess the number!</p>
+        <select id="range">
+            <option value="100">1-100</option>
+            <option value="500">1-500</option>
+            <option value="1000">1-1000</option>
+        </select>
+        <input type="number" placeholder="Enter a guess number" id="guessNum">
+        <div class="message" id="message"></div>
+        <button id="startGAME">Start Game</button>
+
+        <audio id="winSound" src="./SONG/win.mp3"></audio>
+        <audio id="tryAgainSound" src="./SONG/24_Game_2_input_sound.mp3"></audio>
+        <audio id="loseSound" src="./SONG/you-lose-game-sound.mp3"></audio>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
